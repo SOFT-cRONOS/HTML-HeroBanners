@@ -42,6 +42,7 @@
 .slide-content p {
     font-size: 18px;
     margin-bottom: 30px;
+    transform: translate(-50%, -50%);
 }
 
 .btn {
@@ -52,4 +53,18 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 6s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
