@@ -68,6 +68,8 @@ p {
     color: var(--color-texto)
 }
 
+
+
 .divider {
     height: 4px;
     width: 40px;
@@ -79,6 +81,8 @@ p {
     height: 4px;
     background-color: var(--color-primario);
 }
+
+
 
 /* Estilos para el navbar */
 .navbar {
@@ -180,12 +184,7 @@ margin-right: 5px;
 
 
 /* services */
-.container-xxl {
-    padding: 2% 20% 2% 20%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -236,4 +235,44 @@ margin-right: 5px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  }
+
+
+
+
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col {
+    width: 300px;
+    padding: 20px;
+    margin: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .col img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .col h3 {
+    margin-top: 10px;
+  }
+  
+  .col p {
+    margin-top: 10px;
+  }
+  
+  .col a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: #333;
   }
