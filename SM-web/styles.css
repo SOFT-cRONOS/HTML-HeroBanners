@@ -236,7 +236,7 @@ margin-right: 5px;
 
 /* services */
   .services {
-    background-image: url(sources/banner_stickers.webp) ;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.9)), url(sources/banner_stickers.webp) ;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,3 +285,78 @@ margin-right: 5px;
 #action h3 {
   font-size: 1rem;
 }
+
+#portfolio {
+  background-color: white;
+}
+
+
+
+/*portfolio con filtro*/
+
+.row.gallery {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+.row.gallery {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row ,
+.row  > .columng {
+  padding: 0px;
+}
+
+/* Create three equal columns that floats next to each other */
+.columng {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.row.gallery  .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.row.gallery .btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.row.gallery  .btn.active {
+  background-color: #666;
+   color: white;
+}
+
+
+
+
