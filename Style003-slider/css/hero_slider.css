@@ -1,0 +1,100 @@
+
+/* General */
+:root {
+    --color-primario:  #ff5733 ;
+    --color-secundario:  #FFC300 ;
+    --color-terciario:  #C70039;
+    --color-cuaternario:  #581845;
+    --color-blanco:  #fdfefe;
+    --color-negro:  #17202a ;
+    --color-gradiente:  rgba(0, 0, 0, 0.5); /* Color semitransparente */
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand';
+}
+
+
+/* slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.slide-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slide-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+/* efectos */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 6s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

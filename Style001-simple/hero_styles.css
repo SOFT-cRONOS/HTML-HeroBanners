@@ -1,0 +1,103 @@
+/* font */
+@font-face {
+    font-family: 'quicksand';
+    src: url('assets/font/Quicksand-VariableFont_wght.ttf');
+}
+
+
+/* General */
+:root {
+    --color-primario:  #ff5733 ;
+    --color-secundario:  #FFC300 ;
+    --color-terciario:  #C70039;
+    --color-cuaternario:  #581845;
+    --color-blanco:  #fdfefe;
+    --color-negro:  #17202a ;
+    --color-gradiente:  rgba(0, 0, 0, 0.5); /* Color semitransparente */
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand';
+}
+
+
+/* banner */
+.hero-banner {
+    background-image: url("https://media.istockphoto.com/id/512882668/photo/entering-hotel-room.jpg?s=612x612&w=0&k=20&c=dkStriVIj-19NVWg1AgHdBAtRGndus-sQJiZdo5N6ss=");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-gradiente); /* Color semitransparente */
+}
+
+
+.hero-content {
+    text-align: center;
+    color: var(--color-blanco);
+    position: relative;
+    z-index: 1; /* Asegura que el contenido aparezca encima de la capa de fondo */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--color-secundario);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.0rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        margin-right: 0.5rem;
+    }
+}

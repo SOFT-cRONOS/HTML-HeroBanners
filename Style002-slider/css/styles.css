@@ -1,0 +1,97 @@
+
+/* General */
+:root {
+    --color-primario: #46BBE6 ;
+    --color-secundario:  #E65C7B ;
+    --color-terciario:  #1F7899;
+    --color-cuaternario:  #E6DB2E;
+    --color-blanco:  #fdfefe;
+    --color-negro:  #17202a ;
+    --color-gradiente:  rgba( 70, 73, 76, 0.5); /* Color semitransparente */
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* slider */
+
+
+.swiffy-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-container li {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-container li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-container li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-gradiente); /* Color semitransparente */
+}
+
+
+/* slider content */
+.slider-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-blanco);
+    transition: opacity 0.5s ease; /* Animación de opacidad */
+}
+
+
+
+.slider-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slider-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* buttons */
+.btn-large {
+    padding: 10px 30px;
+    background-color:var(--color-primario);
+    border: none;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-large:hover {
+    background-color: var(--color-secundario);
+}
+
+
